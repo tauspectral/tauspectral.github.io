@@ -40,13 +40,13 @@ bins. The normalization is 100 times the relevant tau branching
 fraction. **V** and **A** denote the sums of vector and axial
 invariant mass squared distributions of vector and axial decay modes.
 
-1.  [**V+A**](specfun13/aleph13_vplusa.f)
-2.  [**V-A**](specfun13/aleph13_vminusa.f)
-3.  [**V**](specfun13/aleph13_v.f)
-4.  [**A**](specfun13/aleph13_a.f)
-5.  [**$\pi\pi^0$**](specfun13/aleph13_pipi0.f)
-6.  [**$\pi2\pi^0$**](specfun13/aleph13_pi2pi0.f)
-7.  [**$3\pi$**](specfun13/aleph13_3pi.f)
-8.  [**$3\pi\pi^0$**](specfun13/aleph13_3pipi0.f)
-9.  [**$\pi3\pi^0$**](specfun13/aleph13_pi3pi0.f)
-10. [**Covariance V vs. A**](specfun13/aleph13_v_a.f)
+1.  [**V+A**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_vplusa.f)
+2.  [**V-A**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_vminusa.f)
+3.  [**V**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_v.f)
+4.  [**A**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_a.f)
+5.  [**$\pi\pi^0$**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_pipi0.f)
+6.  [**$\pi2\pi^0$**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_pi2pi0.f)
+7.  [**$3\pi$**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_3pi.f)
+8.  [**$3\pi\pi^0$**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_3pipi0.f)
+9.  [**$\pi3\pi^0$**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_pi3pi0.f)
+10. [**Covariance V vs. A**](http://aleph.web.lal.in2p3.fr/tau/specfun13/aleph13_v_a.f)
