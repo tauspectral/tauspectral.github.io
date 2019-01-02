@@ -7,18 +7,50 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>/</loc>
-  <lastmod>2018-12-31T17:45:00Z</lastmod>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
  </url>
  <url>
-  <loc>/archive.html</loc>
-  <lastmod>2018-12-31T17:47:00Z</lastmod>
+  <loc>/archive/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
  </url>
  <url>
-  <loc>/blog/</loc>
-  <lastmod>2018-12-31T17:45:00Z</lastmod>
+  <loc>/archive/2018/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
  </url>
  <url>
-  <loc>/categories/</loc>
-  <lastmod>2018-12-31T17:45:00Z</lastmod>
+  <loc>/posts/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/posts/aleph-non-strange-2014/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/tags/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/tags/aleph/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/tags/axial/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/tags/data/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/tags/mathjax/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/tags/non-strange/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>/tags/vector/</loc>
+  <lastmod>2019-01-02T00:39:00Z</lastmod>
  </url>
 </urlset>
