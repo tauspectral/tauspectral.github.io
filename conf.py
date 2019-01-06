@@ -3,8 +3,7 @@
 from __future__ import unicode_literals
 import time
 
-# !! This is the configuration of Nikola. !! #
-# !!  You should edit it to your liking.  !! #
+# !! Tau Spectral Functions website nikola configuration. !! #
 
 
 # ! Some settings can be different in different languages.
@@ -131,15 +130,18 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #          else they won’t be highlighted when active.
 NAVIGATION_LINKS = {
   DEFAULT_LANG: (
+    ## ("link://post_path/posts", "Posts"),
     ("/posts/", "Posts"),
-    ("/tags/", "Tags"),
-    ("/archive/", "Archive"),
-    ("/rss.xml", "RSS"),
-#    ((('/foo', 'FOO'),
-#      ('/bar', 'BAR')), 'BAZ'),
-#   ("./curriculum.html", "Curriculum"),
-#   ("/archive.html", "Archive"),
-#   ("/categories/", "Tags"),
+    ## ("link://category_index", "Categories"),
+    ("link://tag_index", "Tags"),
+    ("link://archive", "Archive"),
+    ("link://index_rss", "RSS"),
+    ## (
+    ##   (
+    ##     ("link://slug/page1", "page1"),
+    ##   ),
+    ##   "Pages"
+    ## ),
   ),
 }
 
@@ -399,6 +401,14 @@ TAGS_INDEX_PATH = "tags/index.html"
 #        "open source": "Posts about open source software"
 #    },
 # }
+TAG_PAGES_TITLES = {
+  DEFAULT_LANG: {
+    "data": "List of up-to-date experimental data",
+    "ALEPH": "List of ALEPH data",
+    "strange": "List of experimental data on tau strange spectral functions",
+    "non-strange": "List of experimental data on tau non-strange spectral functions",
+  },
+}
 
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page, the tag cloud and posts.

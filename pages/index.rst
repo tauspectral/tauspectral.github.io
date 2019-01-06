@@ -9,7 +9,10 @@
 
 This site collects information about the tau lepton spectral functions.
 
-* `up-to-date experimental data <link://tag/data>`_
+Sections
+========
+
+* `List of up-to-date experimental data <link://tag/data>`_
 
 .. |br| raw:: html
 
