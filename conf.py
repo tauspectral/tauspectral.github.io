@@ -404,9 +404,9 @@ TAGS_INDEX_PATH = "tags/index.html"
 TAG_PAGES_TITLES = {
   DEFAULT_LANG: {
     "data": "List of up-to-date experimental data",
-    "ALEPH": "List of ALEPH data",
-    "strange": "List of experimental data on tau strange spectral functions",
-    "non-strange": "List of experimental data on tau non-strange spectral functions",
+    "ALEPH": "Posts on ALEPH results",
+    "strange": "Posts on strange tau spectral functions",
+    "non-strange": "Posts on non-strange tau spectral functions",
   },
 }
 
