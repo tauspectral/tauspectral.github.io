@@ -24,7 +24,7 @@ Zhiqing Zhang (Orsay, LAL)
 
 ### Abstract
 An update of the ALEPH non-strange spectral functions from hadronic
-\$\\tau\$ decays is presented. Compared to the 2005 ALEPH publication,
+$\tau$ decays is presented. Compared to the 2005 ALEPH publication,
 the main improvement is related to the use of a new method to unfold the
 measured mass spectra from detector effects. This procedure also
 corrects a previous problem in the correlations between the unfolded
