@@ -2,11 +2,12 @@
 .. title: Non-strange spectral functions, ALEPH, 2014
 .. slug: aleph-non-strange-2014
 .. date: 2018-09-01 13:00:00 UTC+01:00
-.. tags: mathjax, data, ALEPH, non-strange
+.. tags: data, ALEPH, non-strange
 .. category: 
 .. link: 
 .. description: Update of ALEPH 2005 publication with new unfolding method
 .. type: text
+.. has_math: true
 -->
 
 <!-- TEASER_END -->

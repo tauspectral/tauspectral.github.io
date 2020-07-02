@@ -13,35 +13,39 @@ ${template_hooks['extra_head']()}
 
 <!-- Menubar -->
 
-<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container"><!-- This keeps the margins nice -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
-            <span class="sr-only">${messages("Toggle navigation")}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="${abs_link(_link("root", None, lang))}">
-            %if logo_url:
-                <img src="${logo_url}" alt="${blog_title|h}" id="logo">
-            %endif
+<nav class="navbar navbar-expand-md static-top
+% if theme_config.get('navbar_light'):
+navbar-light
+% else:
+navbar-dark
+% endif
+">
+    <div class="container bg-dark"><!-- This keeps the margins nice -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="${_link("root", None, lang)}">
+        %if logo_url:
+            <img src="${logo_url}" alt="${blog_title|h}" id="logo" class="d-inline-block align-top">
+        %endif
 
-            % if show_blog_title:
-                <span id="blog-title">${blog_title|h}</span>
-            % endif
-            </a>
-        </div><!-- /.navbar-header -->
-        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
-            <ul class="nav navbar-nav">
-                ${base.html_navigation_links()}
+        % if show_blog_title:
+            <span id="blog-title">${blog_title|h}</span>
+        % endif
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+                ${base.html_navigation_links_entries(navigation_links)}
                 ${template_hooks['menu']()}
             </ul>
             %if search_form:
                 ${search_form}
             %endif
 
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="navbar-nav navbar-right">
+                ${base.html_navigation_links_entries(navigation_alt_links)}
                 <%block name="belowtitle">
                 %if len(translations) > 1:
                     <li>${base.html_translations()}</li>
@@ -53,6 +57,7 @@ ${template_hooks['extra_head']()}
                 ${template_hooks['menu_alt']()}
             </ul>
         </div><!-- /.navbar-collapse -->
+      </div><!-- /.navbar-header -->
     </div><!-- /.container -->
 </nav>
 
@@ -61,34 +66,36 @@ ${template_hooks['extra_head']()}
 <div class="container" id="content" role="main">
     <div class="body-content">
         <!--Body content-->
-        <div class="row">
-            ${template_hooks['page_header']()}
-            <%block name="content"></%block>
-        </div>
+        ${template_hooks['page_header']()}
+        <%block name="extra_header"></%block>
+        <%block name="content"></%block>
         <!--End of body content-->
 
-        <hr style="margin-top: 0.4ex; margin-bottom: 0.2ex" />
         <footer id="footer">
             ${content_footer}
             ${template_hooks['page_footer']()}
+            <%block name="extra_footer"></%block>
         </footer>
     </div>
 </div>
 
 ${base.late_load_js()}
-    <script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
-    <!-- fancy dates -->
-    <script>
-    moment.locale("${momentjs_locales[lang]}");
-    fancydates(${date_fanciness}, ${js_date_format});
-    </script>
-    <!-- end fancy dates -->
+    %if date_fanciness != 0:
+        <!-- fancy dates -->
+        <script>
+        luxon.Settings.defaultLocale = "${luxon_locales[lang]}";
+        fancydates(${date_fanciness}, ${luxon_date_format});
+        </script>
+        <!-- end fancy dates -->
+    %endif
     <%block name="extra_js"></%block>
-    % if annotations and post and not post.meta('noannotations'):
-        ${notes.code()}
-    % elif not annotations and post and post.meta('annotations'):
-        ${notes.code()}
-    % endif
+    <script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
 ${body_end}
 ${template_hooks['body_end']()}
 </body>
