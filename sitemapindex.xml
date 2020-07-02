@@ -6,27 +6,35 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://tauspectral.github.io/categories/gm2-hvp-elab.xml</loc>
+  <lastmod>2020-07-02T13:30:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://tauspectral.github.io/galleries/rss.xml</loc>
   <lastmod>2020-07-02T01:21:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://tauspectral.github.io/rss.xml</loc>
-  <lastmod>2020-07-02T01:21:00Z</lastmod>
+  <lastmod>2020-07-02T13:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://tauspectral.github.io/sitemap.xml</loc>
-  <lastmod>2020-07-02T01:21:00Z</lastmod>
+  <lastmod>2020-07-02T13:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://tauspectral.github.io/tags/aleph.xml</loc>
-  <lastmod>2020-07-02T01:21:00Z</lastmod>
+  <lastmod>2020-07-02T13:26:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://tauspectral.github.io/tags/babar.xml</loc>
+  <lastmod>2020-07-02T13:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://tauspectral.github.io/tags/data.xml</loc>
-  <lastmod>2020-07-02T01:21:00Z</lastmod>
+  <lastmod>2020-07-02T13:26:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://tauspectral.github.io/tags/non-strange.xml</loc>
-  <lastmod>2020-07-02T01:21:00Z</lastmod>
+  <lastmod>2020-07-02T13:26:00Z</lastmod>
  </sitemap>
 </sitemapindex>
