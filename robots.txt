@@ -1,4 +1,4 @@
-Sitemap: /sitemapindex.xml
+Sitemap: https://tauspectral.github.io/sitemapindex.xml
 
 User-Agent: *
-Host: 
+Host: tauspectral.github.io

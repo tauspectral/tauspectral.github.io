@@ -6,27 +6,27 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>/rss.xml</loc>
-  <lastmod>2019-01-06T10:52:00Z</lastmod>
+  <loc>https://tauspectral.github.io/galleries/rss.xml</loc>
+  <lastmod>2020-07-02T01:21:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/sitemap.xml</loc>
-  <lastmod>2019-01-06T13:11:00Z</lastmod>
+  <loc>https://tauspectral.github.io/rss.xml</loc>
+  <lastmod>2020-07-02T01:21:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/tags/aleph.xml</loc>
-  <lastmod>2019-01-06T13:11:00Z</lastmod>
+  <loc>https://tauspectral.github.io/sitemap.xml</loc>
+  <lastmod>2020-07-02T01:21:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/tags/data.xml</loc>
-  <lastmod>2019-01-06T13:11:00Z</lastmod>
+  <loc>https://tauspectral.github.io/tags/aleph.xml</loc>
+  <lastmod>2020-07-02T01:21:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/tags/mathjax.xml</loc>
-  <lastmod>2019-01-06T13:11:00Z</lastmod>
+  <loc>https://tauspectral.github.io/tags/data.xml</loc>
+  <lastmod>2020-07-02T01:21:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>/tags/non-strange.xml</loc>
-  <lastmod>2019-01-06T13:11:00Z</lastmod>
+  <loc>https://tauspectral.github.io/tags/non-strange.xml</loc>
+  <lastmod>2020-07-02T01:21:00Z</lastmod>
  </sitemap>
 </sitemapindex>

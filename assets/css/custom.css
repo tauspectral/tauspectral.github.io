@@ -1,42 +1,51 @@
 /*
-  assembleed using:
-  - https://meshlogic.github.io/assets/css/theme.css
-  - nikola/data/themes/bootstrap3/assets/css/theme.css
- 
-  adaptations for flatly bootswatch theme, modified by A. Lusiani
+  style and code from https://meshlogic.github.io/assets/css/theme.css
+  adapted to bootstrap4 by A. Lusiani
 */
 
+/*
 h1, .h1, h2, .h2, h3, .h3 {
   margin-top: 5px;
   margin-bottom: 8px;
 }
-
+*/
+/*
 body {
   background-attachment: fixed;
 }
+*/
+
 #content {
   background-image: url(../img/paper_grid_01.png);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-top: 15px;
-}
-.container {
-  max-width: 850px;
+  margin-top: 0rem;
+  padding: 1rem;
 }
 
 /*******************************************************************************
 ** Navbar
 *******************************************************************************/
+
 .navbar {
-  background-color: transparent;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
 }
-.navbar .container {
-  background-color: #335577;
+
+.navbar-header {
+  width: inherit;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex-wrap: inherit;
+  display: inherit;
 }
-.navbar {
-  margin-bottom: 0px;
+
+#footer {
+  padding-top: 0.4rem;
+  border-top: 2px solid rgba(0, 0, 0, 0.33);
 }
+
+/*
 caption {
   color: #202020;
 }
@@ -44,10 +53,9 @@ caption {
 #blog-title {
   padding: 20px 0px !important;
 }
+*/
 
-/*******************************************************************************
-** Media
-*******************************************************************************/
+/*
 @media print {
   a[href]:after {
     content: none;
@@ -60,6 +68,35 @@ caption {
     content: none;
   }
 }
+*/
+
+div.prompt {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+div.text_cell_render {
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border-radius: 4px;
+  padding: 0.4em !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+pre.code, .code .codetable, .highlight pre {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+/*
+div.output_subarea {
+  padding: 0.4em !important;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+*/
 
 .rendered_html table tbody tr:nth-of-type(odd) {
   background-color: #e0e0e0;
@@ -71,6 +108,7 @@ caption {
 .rendered_html pre, .rendered_html code {
   background-color: rgba(128, 128, 128, 0.1) !important;
 }
+*/
 
 /*******************************************************************************
 ** Code Block
@@ -277,7 +315,7 @@ div.hint, div.important, div.note, div.tip, div.warning {
     margin-bottom: 0px;
 }
 
-.more{
+.more {
   clear: both;
   padding-bottom: 8px;
 }
@@ -286,35 +324,18 @@ div.hint, div.important, div.note, div.tip, div.warning {
 ** customize listpages
 *******************************************************************************/
 
+/*
 .listpage > header > h1 {
     margin-top: 5px;
     margin-bottom: 8px;
 }
-
-/*******************************************************************************
-** Post navigation (https://meshlogic.github.io/assets/css/theme.css
-*******************************************************************************/
-.postpromonav {
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-.pager {
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-.pager li > a,
-.pager li > span {
-  background-color: #335577;
-}
-.pager li > a:hover,
-.pager li > a:focus {
-  background-color: #335577;
-  color: #c0c0c0;
-}
+*/
 
 /*******************************************************************************
 ** add to nikola_ipython.css
 *******************************************************************************/
+
+/*
 div.cell {
   padding: 0px 0px;
   margin-bottom: 10px !important;
@@ -324,12 +345,13 @@ div.cell {
   clear: both;
   padding-bottom: 0px;;
 }
+*/
 
 /*******************************************************************************
 ** tags
 *******************************************************************************/
 
-.tags > li {
+.tags > li a {
   font-weight: normal;
   background-color: #335577;
 }
