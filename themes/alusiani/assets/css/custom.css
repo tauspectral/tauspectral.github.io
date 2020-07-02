@@ -4,15 +4,9 @@
 */
 
 /*
-h1, .h1, h2, .h2, h3, .h3 {
-  margin-top: 5px;
-  margin-bottom: 8px;
-}
-*/
-/*
-body {
-  background-attachment: fixed;
-}
+  - body bkg
+  - navbar limited to body width
+  - separating line for footer
 */
 
 #content {
@@ -20,10 +14,6 @@ body {
   margin-top: 0rem;
   padding: 1rem;
 }
-
-/*******************************************************************************
-** Navbar
-*******************************************************************************/
 
 .navbar {
   padding-left: 0rem;
@@ -42,321 +32,83 @@ body {
 
 #footer {
   padding-top: 0.4rem;
-  border-top: 2px solid rgba(0, 0, 0, 0.33);
+  border-top: 2px solid #a0a0a0;
 }
 
 /*
-caption {
-  color: #202020;
-}
-
-#blog-title {
-  padding: 20px 0px !important;
-}
+  improve jupyter notebook rendering
 */
 
-/*
-@media print {
-  a[href]:after {
-    content: none;
-  }
-  abbr[title]:after {
-    content: none;
-  }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: none;
-  }
+code {
+  font-size: 100%;
 }
-*/
+
+pre {
+  padding: 0.75em;
+}
+
+/* code and output in Jupiter nontebooks */
+
+.rendered_html {
+  font-size: 87.5%;
+}
 
 div.prompt {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #a0a0a0;
   border-radius: 4px;
+  font-size: 75%;
+}
+
+div.input_prompt {
+  border-top: 1px solid #a0a0a0 !important;
+}
+
+div.input_area {
+  font-size: 87.5%;
 }
 
 div.text_cell_render {
-  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  border: 1px solid #a0a0a0 !important;
   border-radius: 4px;
   padding: 0.4em !important;
-  background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
 }
+
+/* jupyter notebook code cells */
 
 pre.code, .code .codetable, .highlight pre {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #a0a0a0 !important;
   border-radius: 4px;
 }
 
-/*
-div.output_subarea {
-  padding: 0.4em !important;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 4px !important;
-  background-color: rgba(0, 0, 0, 0.1) !important;
+pre.literal-block, pre.doctest-block, pre.math, pre.code, div.code {
+  font-size: 87.5%;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
-*/
+
+/* tables */
+
+.rendered_html table {
+  font-size: 87.5% !important;
+}
 
 .rendered_html table tbody tr:nth-of-type(odd) {
-  background-color: #e0e0e0;
+  background-color: #00000010;
 }
 .rendered_html table tbody tr:nth-of-type(even) {
-  background-color: #ececec;
+  background-color: #ffffff40;
 }
 
 .rendered_html pre, .rendered_html code {
-  background-color: rgba(128, 128, 128, 0.1) !important;
-}
-*/
-
-/*******************************************************************************
-** Code Block
-*******************************************************************************/
-pre.code {
-  background-color: rgba(128, 128, 128, 0.1) !important;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
-table.codetable {
-    background-color: rgba(128, 128, 128, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    border-collapse: initial;
-    overflow: visible;
-    margin: 1.2em 0;
-}
-table.codetable td {
-    max-width: 0;
-    padding: 0;
-    margin: 0;
-}
-
-/* Code style */
-td.code {
-    padding-left: 70px !important;
-    width: 100%;
-}
-td.code pre {
-    padding-left: 10px;
-    margin: 0;
-    background: 0 !important;
-    border: 0;
-}
-
-/* Line numbers style */
-td.linenos {
-    width: 10px;
-}
-td.linenos pre {
-    padding: 7px 10px;
-    margin: 0;
-    border: 0;
-    /*color: #303f9f;*/
-    color: #202020;
-    font-size: 13px;
-    background-color: rgba(0, 0, 0, 0.15);
-    /*background-color: rgba(128, 128, 128, 0.3);*/
-    cursor: default;
-    pointer-events: none;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-td.linenos pre a {
-    color: inherit;
-}
-.linenodiv {
-    width: 70px;
-}
-
-/*******************************************************************************
-** IN-LINE Code
-*******************************************************************************/
-tt, code {
-  background-color: rgba(128, 128, 128, 0.1) !important;
-  color: black !important;
-}
-
-/*******************************************************************************
-** Figures, Images
-*******************************************************************************/
-/* Flexbox Container for Figures */
-/* RST usage: .. container:: figures-container center */
-.figures-container {
-    width: 100%;
-    padding: 0;
-    margin: 1.5em 0 0 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-.figures-container > .figure {
-    margin: 0 12px 24px 12px !important;
-    clear: none !important;
-    /*flex-grow: 1;
-    flex-basis: 0;*/
-}
-
-/*** Figure ***/
-.figure {
-    display: table !important;
-}
-.figure img {
-    width: 100%;
-}
-.figure-radius {
-    border-radius: 4px;
-}
-.figure.align-left {
-    margin-left: 0;
-    margin-right: 1.2em;
-}
-.figure.align-right {
-    margin-right: 0;
-    margin-left: 1.2em;
-}
-.figure.align-center {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-/*** Thumbnail - Figure with frame ***/
-.thumbnail, .thumbnail > .caption {
-    border: 0;
-    background-color: #faf9f5;
-    /* box-shadow: 0px 2px 3px 0 rgba(0,0,0,0.4); */
-}
-
-/*** Caption ***/
-.caption {
-    font-size: 14px;
-    line-height: 1.285714286;
-    margin: 0;
-    padding: 8px 2px 8px 2px !important;
-}
-.figure > .caption {
-    display: table-caption;
-    caption-side: bottom;
-    position: relative;
-}
-.thumbnail > .caption{
-    margin-top: -4px;
-    border-radius: 0 0 4px 4px;
-}
-
-/*******************************************************************************
-** customize defs in nikola_rst.css
-*******************************************************************************/
-div.admonition, div.attention, div.caution, div.danger, div.error,
-div.hint, div.important, div.note, div.tip, div.warning, div.sidebar {
-/* stolen from Boostrap 3 (.panel .panel-default) */
-  background-color: #aaa;
-}
-
-div.attention, div.caution, div.danger, div.error, div.warning {
-  /* stolen from Boostrap 3 (.panel .panel-danger) */
-  border-color: #EBCCD1;
-}
-
-div.admonition p.admonition-title, div.hint p.admonition-title,
-div.important p.admonition-title, div.note p.admonition-title,
-div.tip p.admonition-title, div.sidebar p.sidebar-title,
-div.attention p.admonition-title, div.caution p.admonition-title,
-div.danger p.admonition-title, div.error p.admonition-title,
-div.warning p.admonition-title {
-/* stolen from Boostrap 3 (.panel .panel-default .panel-heading) */
-  background-color: #999999;
-  border-bottom: 1px solid #888888;
-}
-
-/* refine html4css1.css */
-div.admonition, div.attention, div.caution, div.danger, div.error,
-div.hint, div.important, div.note, div.tip, div.warning {
-  margin: 1em ;
-}
-
-/*******************************************************************************
-** Post header & container (https://meshlogic.github.io/assets/css/theme.css
-*******************************************************************************/
-.postindex > article {
-    clear: both;
-}
-
-/* Post header container */
+/* Post header container, add top and bottom border */
 .h-entry > header {
-    border-top: 2px solid rgba(0, 0, 0, 0.33);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.33);
+    border-top: 2px solid #a0a0a0;
+    border-bottom: 2px solid #a0a0a0;
 }
 
-.h-entry > header > h1 {
-    margin-top: 2px;
-    margin-bottom: 10px;
-}
-
-.h-entry > header > h1 > a {
-    /* font-weight: 400; */
-    /* font-size: 28px; */
-}
-
-/* Post header > metadata */
-.h-entry > header > .metadata {
-    margin-top: -5px;
-    margin-bottom: 2.5px;
-}
-
-/* Post container */
-.entry-content {
-    margin-top: 12px;
-    margin-bottom: 0px;
-}
-
-/* Post teaser container */
-.entry-summary {
-    margin-top: 12px;
-    margin-bottom: 0px;
-}
-
-.more {
-  clear: both;
-  padding-bottom: 8px;
-}
-
-/*******************************************************************************
-** customize listpages
-*******************************************************************************/
-
-/*
-.listpage > header > h1 {
-    margin-top: 5px;
-    margin-bottom: 8px;
-}
-*/
-
-/*******************************************************************************
-** add to nikola_ipython.css
-*******************************************************************************/
-
-/*
-div.cell {
-  padding: 0px 0px;
-  margin-bottom: 10px !important;
-}
-
-.more {
-  clear: both;
-  padding-bottom: 0px;;
-}
-*/
-
-/*******************************************************************************
-** tags
-*******************************************************************************/
-
-.tags > li a {
-  font-weight: normal;
-  background-color: #335577;
-}
-
-.badge {
-  font-weight: normal;
-  background-color: #335577;
-}
